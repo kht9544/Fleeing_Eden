@@ -41,13 +41,27 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Input")
 	UInputAction* MoveAction;
 
+	/** Called for movement input */
+	void Move(const FInputActionValue& Value);
+
 	/** Look Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Input")
 	UInputAction* LookAction;
 
+	/** Called for looking input */
+	void Look(const FInputActionValue& Value);
+
+
 	/** Mouse Look Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Input")
 	UInputAction* MouseLookAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Input")
+	UInputAction* ClimbAction;
+
+	/** Called for climbing input */
+	void OnClimbActionStarted(const FInputActionValue& Value);
+
 
 public:
 
@@ -59,13 +73,8 @@ protected:
 	/** Initialize input action bindings */
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-protected:
 
-	/** Called for movement input */
-	void Move(const FInputActionValue& Value);
 
-	/** Called for looking input */
-	void Look(const FInputActionValue& Value);
 
 public:
 

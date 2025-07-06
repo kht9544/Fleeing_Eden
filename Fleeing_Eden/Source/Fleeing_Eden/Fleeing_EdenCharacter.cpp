@@ -66,6 +66,10 @@ void AFleeing_EdenCharacter::SetupPlayerInputComponent(UInputComponent* PlayerIn
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AFleeing_EdenCharacter::Look);
+
+		// Climbing
+		EnhancedInputComponent->BindAction(ClimbAction, ETriggerEvent::Started, this, &AFleeing_EdenCharacter::OnClimbActionStarted);
+
 	}
 	else
 	{
@@ -132,3 +136,11 @@ void AFleeing_EdenCharacter::DoJumpEnd()
 	// signal the character to stop jumping
 	StopJumping();
 }
+
+void AFleeing_EdenCharacter::OnClimbActionStarted(const FInputActionValue& Value)
+{
+	// Handle climbing action start
+	// This is a placeholder for your climbing logic
+	UE_LOG(LogTemp, Warning , TEXT("Climb action started!"));
+}
+

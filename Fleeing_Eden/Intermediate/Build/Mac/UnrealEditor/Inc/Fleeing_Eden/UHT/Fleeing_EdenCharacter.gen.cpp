@@ -320,6 +320,10 @@ struct Z_Construct_UClass_AFleeing_EdenCharacter_Statics
 		{ "ToolTip", "Mouse Look Input Action" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ClimbAction_MetaData[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "Fleeing_EdenCharacter.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
@@ -327,6 +331,7 @@ struct Z_Construct_UClass_AFleeing_EdenCharacter_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MoveAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MouseLookAction;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ClimbAction;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -347,6 +352,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFleeing_EdenC
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFleeing_EdenCharacter_Statics::NewProp_MoveAction = { "MoveAction", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFleeing_EdenCharacter, MoveAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MoveAction_MetaData), NewProp_MoveAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFleeing_EdenCharacter_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFleeing_EdenCharacter, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LookAction_MetaData), NewProp_LookAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFleeing_EdenCharacter_Statics::NewProp_MouseLookAction = { "MouseLookAction", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFleeing_EdenCharacter, MouseLookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MouseLookAction_MetaData), NewProp_MouseLookAction_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFleeing_EdenCharacter_Statics::NewProp_ClimbAction = { "ClimbAction", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFleeing_EdenCharacter, ClimbAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ClimbAction_MetaData), NewProp_ClimbAction_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFleeing_EdenCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFleeing_EdenCharacter_Statics::NewProp_CameraBoom,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFleeing_EdenCharacter_Statics::NewProp_FollowCamera,
@@ -354,6 +360,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFleeing_
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFleeing_EdenCharacter_Statics::NewProp_MoveAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFleeing_EdenCharacter_Statics::NewProp_LookAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFleeing_EdenCharacter_Statics::NewProp_MouseLookAction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFleeing_EdenCharacter_Statics::NewProp_ClimbAction,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AFleeing_EdenCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AFleeing_EdenCharacter_Statics::DependentSingletons[])() = {
@@ -392,10 +399,10 @@ AFleeing_EdenCharacter::~AFleeing_EdenCharacter() {}
 struct Z_CompiledInDeferFile_FID_kim_Documents_GitHub_kht9544_Fleeing_Eden_Fleeing_Eden_Source_Fleeing_Eden_Fleeing_EdenCharacter_h__Script_Fleeing_Eden_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AFleeing_EdenCharacter, AFleeing_EdenCharacter::StaticClass, TEXT("AFleeing_EdenCharacter"), &Z_Registration_Info_UClass_AFleeing_EdenCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFleeing_EdenCharacter), 3778770444U) },
+		{ Z_Construct_UClass_AFleeing_EdenCharacter, AFleeing_EdenCharacter::StaticClass, TEXT("AFleeing_EdenCharacter"), &Z_Registration_Info_UClass_AFleeing_EdenCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFleeing_EdenCharacter), 3294038571U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_kim_Documents_GitHub_kht9544_Fleeing_Eden_Fleeing_Eden_Source_Fleeing_Eden_Fleeing_EdenCharacter_h__Script_Fleeing_Eden_2331628022(TEXT("/Script/Fleeing_Eden"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_kim_Documents_GitHub_kht9544_Fleeing_Eden_Fleeing_Eden_Source_Fleeing_Eden_Fleeing_EdenCharacter_h__Script_Fleeing_Eden_100544272(TEXT("/Script/Fleeing_Eden"),
 	Z_CompiledInDeferFile_FID_kim_Documents_GitHub_kht9544_Fleeing_Eden_Fleeing_Eden_Source_Fleeing_Eden_Fleeing_EdenCharacter_h__Script_Fleeing_Eden_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_kim_Documents_GitHub_kht9544_Fleeing_Eden_Fleeing_Eden_Source_Fleeing_Eden_Fleeing_EdenCharacter_h__Script_Fleeing_Eden_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
