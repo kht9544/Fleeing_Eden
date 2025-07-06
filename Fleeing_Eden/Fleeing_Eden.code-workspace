@@ -1,0 +1,620 @@
+{
+	"folders": [
+		{
+			"name": "Fleeing_Eden",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/Users/Shared/Epic Games/UE_5.6"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off",
+		"terminal.integrated.env.mac": {
+			"PATH": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/ThirdParty/DotNet/8.0.300/mac-x64:${env:PATH}",
+			"DOTNET_ROOT": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/ThirdParty/DotNet/8.0.300/mac-x64",
+			"DOTNET_HOST_PATH": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/ThirdParty/DotNet/8.0.300/mac-x64/dotnet",
+			"DOTNET_MULTILEVEL_LOOKUP": "0",
+			"DOTNET_ROLL_FORWARD": "LatestMajor"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Fleeing_Eden Mac Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_Eden",
+					"Mac",
+					"Debug",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_Eden Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_Eden",
+					"Mac",
+					"Debug",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Fleeing_Eden Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_Eden Mac Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_Eden",
+					"Mac",
+					"Debug",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_Eden Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_Eden",
+					"Mac",
+					"DebugGame",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_Eden Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_Eden",
+					"Mac",
+					"DebugGame",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Fleeing_Eden Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_Eden Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_Eden",
+					"Mac",
+					"DebugGame",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_Eden Mac Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_Eden",
+					"Mac",
+					"Development",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_Eden Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_Eden",
+					"Mac",
+					"Development",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Fleeing_Eden Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_Eden Mac Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_Eden",
+					"Mac",
+					"Development",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_Eden Mac Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_Eden",
+					"Mac",
+					"Test",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_Eden Mac Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_Eden",
+					"Mac",
+					"Test",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Fleeing_Eden Mac Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_Eden Mac Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_Eden",
+					"Mac",
+					"Test",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_Eden Mac Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_Eden",
+					"Mac",
+					"Shipping",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_Eden Mac Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_Eden",
+					"Mac",
+					"Shipping",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Fleeing_Eden Mac Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_Eden Mac Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_Eden",
+					"Mac",
+					"Shipping",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_EdenEditor Mac Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_EdenEditor",
+					"Mac",
+					"Debug",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_EdenEditor Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_EdenEditor",
+					"Mac",
+					"Debug",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Fleeing_EdenEditor Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_EdenEditor Mac Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_EdenEditor",
+					"Mac",
+					"Debug",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_EdenEditor Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_EdenEditor",
+					"Mac",
+					"DebugGame",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_EdenEditor Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_EdenEditor",
+					"Mac",
+					"DebugGame",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Fleeing_EdenEditor Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_EdenEditor Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_EdenEditor",
+					"Mac",
+					"DebugGame",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_EdenEditor Mac Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_EdenEditor",
+					"Mac",
+					"Development",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_EdenEditor Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_EdenEditor",
+					"Mac",
+					"Development",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Fleeing_EdenEditor Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "Fleeing_EdenEditor Mac Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Fleeing_EdenEditor",
+					"Mac",
+					"Development",
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch Fleeing_Eden (Debug)",
+				"request": "launch",
+				"program": "/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Binaries/Mac/UnrealGame-Mac-Debug.app/Contents/MacOS/UnrealGame-Mac-Debug",
+				"preLaunchTask": "Fleeing_Eden Mac Debug Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/Fleeing_Eden": "/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch Fleeing_Eden (DebugGame)",
+				"request": "launch",
+				"program": "/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Binaries/Mac/UnrealGame-Mac-DebugGame.app/Contents/MacOS/UnrealGame-Mac-DebugGame",
+				"preLaunchTask": "Fleeing_Eden Mac DebugGame Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/Fleeing_Eden": "/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch Fleeing_Eden (Development)",
+				"request": "launch",
+				"program": "/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Binaries/Mac/UnrealGame.app/Contents/MacOS/UnrealGame",
+				"preLaunchTask": "Fleeing_Eden Mac Development Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/Fleeing_Eden": "/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch Fleeing_Eden (Test)",
+				"request": "launch",
+				"program": "/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Binaries/Mac/UnrealGame-Mac-Test.app/Contents/MacOS/UnrealGame-Mac-Test",
+				"preLaunchTask": "Fleeing_Eden Mac Test Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/Fleeing_Eden": "/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch Fleeing_Eden (Shipping)",
+				"request": "launch",
+				"program": "/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Binaries/Mac/UnrealGame-Mac-Shipping.app/Contents/MacOS/UnrealGame-Mac-Shipping",
+				"preLaunchTask": "Fleeing_Eden Mac Shipping Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/Fleeing_Eden": "/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch Fleeing_EdenEditor (Debug)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/Mac/UnrealEditor-Mac-Debug.app/Contents/MacOS/UnrealEditor-Mac-Debug",
+				"preLaunchTask": "Fleeing_EdenEditor Mac Debug Build",
+				"args": [
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/Fleeing_Eden": "/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch Fleeing_EdenEditor (DebugGame)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/Mac/UnrealEditor-Mac-DebugGame.app/Contents/MacOS/UnrealEditor-Mac-DebugGame",
+				"preLaunchTask": "Fleeing_EdenEditor Mac DebugGame Build",
+				"args": [
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/Fleeing_Eden": "/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch Fleeing_EdenEditor (Development)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/Mac/UnrealEditor.app/Contents/MacOS/UnrealEditor",
+				"preLaunchTask": "Fleeing_EdenEditor Mac Development Build",
+				"args": [
+					"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/Fleeing_Eden": "/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Mac Development Build",
+				"program": "/Users/Shared/Epic Games/UE_5.6/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Fleeing_Eden.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"env": {
+					"PATH": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/ThirdParty/DotNet/8.0.300/mac-x64:${env:PATH}",
+					"DOTNET_ROOT": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/ThirdParty/DotNet/8.0.300/mac-x64",
+					"DOTNET_HOST_PATH": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/ThirdParty/DotNet/8.0.300/mac-x64/dotnet",
+					"DOTNET_MULTILEVEL_LOOKUP": "0",
+					"DOTNET_ROLL_FORWARD": "LatestMajor"
+				},
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/Users/Shared/Epic Games/UE_5.6"
+			}
+		]
+	}
+}

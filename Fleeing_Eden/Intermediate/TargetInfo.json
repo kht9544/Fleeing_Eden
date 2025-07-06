@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Fleeing_Eden",
+			"Path": "../Source/Fleeing_Eden.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Fleeing_EdenEditor",
+			"Path": "../Source/Fleeing_EdenEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

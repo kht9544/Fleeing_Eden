@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Source/Fleeing_Eden/Fleeing_Eden.Build.cs",
+		"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Source/Fleeing_Eden.Target.cs",
+		"/Users/kim/Documents/GitHub/kht9544/Fleeing_Eden/Fleeing_Eden/Source/Fleeing_EdenEditor.Target.cs"
+	],
+	"EngineVersion": "5.6.0"
+}
